@@ -1,26 +1,54 @@
 import styled from 'styled-components'
 
-const Container = styled.div`
+const Conteudo = styled.div`
 
-    display: flex;
-    flex-direction: row;
     min-width: 100%;
 
     .new-student-box {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
 
         background-color: white;
         box-shadow: 0px 0px 4px 1px rgba(186, 186, 186, 0.25);
-        padding: 2em;
-            
+        padding: 2em 8em 2em 2em ;
+        width: 100%;
     }
 
+    .input-new-student div:nth-child(1) {
+        margin-right: 2.5em;
+        margin-left: 3em;
+    }
+
+    .input-new-student div:nth-child(2) {
+        margin-right: 20em;
+    }
+
+    .input-new-student div:nth-child(4) {
+        margin-right: 20em;
+    }
+
+    .input-new-student div:nth-child(3) {
+        margin-right: 2em;
+        margin-left: 1.4em;
+    }
+
+    .input-new-student div:nth-child(5) {
+        margin-right: 3em;
+        margin-left: 1.3em;
+    }
+
+    .input-new-student div:nth-child(8) {
+        margin-right: 1.1em;
+        margin-left: 1.3em;
+    }
+
+
     .bar-new-student {
-        border: 3px solid #986CDF;
+        border: 3px solid #2595ff;
         border-radius: .5em;
         margin-right: .4em;
-        background-color: #986CDF;
+        background-color: #2595ff;
     }
 
     .text-new-student {
@@ -29,6 +57,8 @@ const Container = styled.div`
 
         font-size: 32px;
     }
+
+
     .text-new-student div {
         font-weight: bolder;
     }
@@ -36,29 +66,15 @@ const Container = styled.div`
     .input-new-student {
         display: flex;
         flex-direction: row;
+
+        flex-wrap: wrap;
         padding-top: 2.4em;
     }
 
-    .agp-input {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
+
     .input {
         margin-top: .5em;
         margin-bottom: .5em;
-    }
-
-    .input-left {
-        display: flex;
-        flex-direction: column;
-        margin-right: 3em;
-    }
-
-    .input-right {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 1em;
     }
 
     input {
@@ -73,36 +89,23 @@ const Container = styled.div`
 
     }
 
-    .name-student {
-        font-size: 18px;
-        color: #615858;
-        width: 5.5em;
-        padding-left: 1em;
-        font-weight: 800;
+    .input-img input {
+    
+        width: 39.5em;
+        height: 36px;
+
+        box-sizing: border-box;
+        border-radius: 5px;
+        padding-left: .5em;
+        margin-left: 0.5em;
+
     }
 
-
-    .number-student {
-        font-size: 18px;
-        color: #615858;
-        width: 5.5em;
-        font-weight: 800;
+    .input-img {
+        display: flex;
+        flex-direction: row;
+        paddig-left: 0.5em;
     }
-
-    .class-student {
-        font-size: 18px;
-        color: #615858;
-        margin-right: 0.8em;
-        font-weight: 800;
-    }
-
-    .corse-student {
-        font-size: 18px;
-        color: #615858;
-        margin-right: 1em;
-        font-weight: 800;
-    }
-
 
     .button-create {
         align-self: flex-end;
@@ -114,7 +117,7 @@ const Container = styled.div`
         width: 106px;
         height: 36px;
 
-        background: #E911C6;
+        background: #2595ff;
         border-radius: 44px;
         border: none;
         color: white;
@@ -149,8 +152,8 @@ const Container = styled.div`
     .information-purple {
         display: flex;
         flex-direction: row;
-        background: #986CDF;
-        width: 1454px;
+        background: #6cc3df;
+        width: 100%;
         height: 67px;
         color: #FFFFFF;
         justify-content: space-evenly;
@@ -163,7 +166,7 @@ const Container = styled.div`
 
 
     .gray{
-        width: 1454px;
+        width: 100%;
         height: 61.93px;
         background: #F5F5F5;
         display: flex;
@@ -174,7 +177,7 @@ const Container = styled.div`
     }
 
     .white {
-        width: 1454px;
+        width: 100%;
         height: 61.93px;
         background: #FFFFFF;
         display: flex;
@@ -185,7 +188,7 @@ const Container = styled.div`
     }
 
     .box-information {
-        border: 1px solid #E2E2E2;
+        border: 1px solid #cbe6ff;
     }
 
     .body-right-box {
@@ -221,7 +224,7 @@ const Container = styled.div`
     }
 
     thead {
-        background-color: #986CDF;
+        background-color: #6cc3df;
     }
 
     table {
@@ -266,9 +269,8 @@ const Container = styled.div`
     }
 
     tr:hover {
-
         .coluna-acao > button {
-            visibility: visible ;
+            visibility: visible;
         }
     }
 
@@ -287,7 +289,7 @@ const Container = styled.div`
 
     .absolute {
         color: white;
-        background-color: #DB21BD;
+        background-color: #2595ff;
         border: 3px solid white;
         border-radius: 50%;
         position: absolute;
@@ -314,9 +316,9 @@ const Container = styled.div`
     }
 `
 
-const Conteudo = styled.div`
+const Container = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
 `
 

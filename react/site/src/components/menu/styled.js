@@ -34,7 +34,7 @@ const Container = styled.div`
     }
 
     .devSchool span {
-        color: #EA10C7;
+        color: #10eaea;
     }
 
     .black-box {
@@ -67,9 +67,9 @@ const Container = styled.div`
         height: 55px;
 
         background-color: white;
-        border-left: 4px solid  #EA10C7;
+        border-left: 4px solid  #2595ff;
 
-        color: #1A1A1A;
+        color: #2595ff;
         font-size: 18px;
         
 
